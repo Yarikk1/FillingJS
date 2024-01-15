@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  background-color: rgba(245, 246, 250, 1);
+  color: rgba(122, 125, 129, 1);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+  color: rgba(0, 0, 0, 1);
+  font-size: 29px;
+}
+
+p {
+  color: rgba(122, 125, 129, 1);
+  font-size: 13px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  color: rgba(133, 180, 64, 1);
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+li > span {
+  color: rgba(122, 125, 129, 1);
+}
+
+.wrapper {
+  height: 100vh;
+  padding: 0px 167px;
+
+  &__navigation {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding-top: 30px;
+  }
+
+  &__cards {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    gap: 30px;
+
+    &_card {
+      height: 505px;
+      border-radius: 14px;
+      background-color: rgba(255, 255, 255, 1);
+      &_content {
+        padding: 0 31px;
+
+        &_info {
+          display: grid;
+          grid-template-columns: repeat(2, 110px);
+          text-wrap: nowrap;
+        }
+
+        &_typePrice {
+          font-size: 13px;
+          margin-left: 15px;
+          margin-top: 10px;
+        }
+
+        &_bottom {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          margin-top: 10px;
+
+          & > button {
+            font-size: 10px;
+            text-wrap: nowrap;
+            border: none;
+            background-color: rgba(254, 170, 1, 1);
+            border-radius: 5px;
+            padding: 10px 31px;
+            color: white;
+          }
+
+          & > img {
+            width: 9px;
+            height: 9px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.nav-btn {
+  background-color: rgba(239, 239, 239, 1);
+  border: none;
+  color: rgba(92, 95, 102, 1);
+  font-size: 13px;
+  border-radius: 4px;
+  padding: 5px 10px;
+
+  &:hover {
+    background-color: rgba(115, 185, 24, 1);
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+  }
+
+  &:last-child {
+    color: rgba(247, 208, 71, 1);
+    background: none;
+    border-bottom: dotted;
+    margin-left: 40px;
+    border-radius: 0px;
+  }
+}
+
+.layout_house_card {
+  font-size: 9px;
+}
